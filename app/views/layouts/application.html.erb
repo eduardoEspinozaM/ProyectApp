@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>4G</title>
+  <title>ProyecApp</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <%= nav_bar :static  => :top , brand: " 4GCenter",:alt => " 4GCenter", :title => " 4GCenter" , :responsive => true do %>
+  <%= nav_bar :static  => :top , brand: " ProyecApp",:alt => " ProyecApp", :title => " ProyecApp" , :responsive => true do %>
         <%= menu_group do %>
         <% if usuario_signed_in? %>
         <%= menu_item glyph(:pushpin) + " Marca", "/marcas" %>

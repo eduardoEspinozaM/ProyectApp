@@ -28,7 +28,7 @@ class LoginsController < ApplicationController
 
     respond_to do |format|
       if @login.save
-        format.html { redirect_to @login, notice: 'Login was successfully created.' }
+        format.html { redirect_to @login, notice: 'El inicio de sesión se ha creado correctamente.' }
         format.json { render :show, status: :created, location: @login }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class LoginsController < ApplicationController
   def update
     respond_to do |format|
       if @login.update(login_params)
-        format.html { redirect_to @login, notice: 'Login was successfully updated.' }
+        format.html { redirect_to @login, notice: 'El inicio de sesión se actualizó correctamente' }
         format.json { render :show, status: :ok, location: @login }
       else
         format.html { render :edit }

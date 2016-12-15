@@ -8,8 +8,8 @@ before_action :authenticate_usuario!
 protected
 
 def layout_by_resource
-  if devise_controller? && resource_name == :usuario && action_name == "new"
-    "login"
+  if devise_controller? && resource_name == :usuario && action_name == "nueva"
+    "sesion"
   else
     "application"
   end
